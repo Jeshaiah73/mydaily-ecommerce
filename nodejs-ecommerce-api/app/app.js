@@ -14,7 +14,7 @@ const app = express();
 app.use(express.json());
 
 //routes
-app.use('/', userRoutes);
+app.use("/api/v1/users/", userRoutes);
 
 //error handler middleware <- must be the last middleware
 app.use(notFound);
